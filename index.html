@@ -338,9 +338,9 @@
     </section>
     
     <footer class="footer">
-      <button type="button" class="footer__button" onclick="window.Dialog.showModal()" aria-controls="true">
-        <svg viewBox="0 0 21 21" class="footer__floppy">
-          <use href="#floppy">
+      <button type="button" class="footer__button" onclick="window.Dialog.showModal()" aria-controls="footer__floppy">
+        <svg viewBox="0 0 21 21" class="footer__floppy" id="footer__floppy">
+          <use href="#floppy" />
         </svg>
         <span class="footer__text">Сохранить на память</span>
      </button>
@@ -348,7 +348,7 @@
 
       <div class="dialog">
           <svg viewBox="0 0 21 21" class="dialog__floppy">
-            <use href="#floppy">
+            <use href="#floppy" />
           </svg>
           <span class="dialog__text">Вставте<br>
              дискету, чтобы продолжить</span>
@@ -362,7 +362,7 @@
     </footer>
     <script src="./scripts/like.js"></script>
 
-    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none" aria-hidden="floppy">
       <symbol id="floppy">
         <rect width="1.61538" height="1.61538" fill="var(--contour)"/>
         <rect y="1.61523" width="1.61538" height="1.61538" fill="var(--contour)"/>
