@@ -337,7 +337,7 @@
   width: 21px;
   height: 21px;
 }
-.dialog {
+.footer__dialog {
   width: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
   height: clamp(12.1875rem, 12.4721rem + -0.6826vw, 12.0625rem);      
   border: solid 2px var(--color);
@@ -354,7 +354,7 @@ dialog::backdrop {
   background-color: #000;
   opacity: 0.8;
 }
-.footer__dialog {
+.dialog {
   background-color: inherit;
   display: grid;
   grid-template-columns: 39px clamp(12.375rem, -35.5781rem + 225vw, 14.625rem);
