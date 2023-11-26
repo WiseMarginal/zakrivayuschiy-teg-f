@@ -4,3 +4,65 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+.theme-dark {
+    --color: #00CC14;
+    --bg-color: #000;
+    --el-color: #000;
+    --bg-image:  
+    repeating-linear-gradient(to left, #000, transparent 2px),
+    repeating-linear-gradient(to top, #000, transparent 2px),
+    linear-gradient(to bottom, #007f0c, #004306);
+
+    --contour: #00CC14;
+    --hover: #00CC14;
+
+    --mn-title-weight: 785;
+    --mn-sbtitle-weight: 465;
+}
+.theme-light {
+    --color: #000;
+    --bg-color: #fff;
+    --el-color: #fff;
+    --bg-image:  
+    repeating-linear-gradient(to left, #d3d3d3, transparent 2px),
+    repeating-linear-gradient(to top, #d3d3d3, transparent 2px),
+    linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+
+    --contour: #000;
+    --sparks: #f00;
+    --hover: #000;
+}
+@media (prefers-color-scheme: dark) {
+    :root.theme-dark,
+     .theme-auto {
+        --color: #00CC14;
+        --bg-color: #000;
+        --el-color: #000;
+        --bg-image:  
+        repeating-linear-gradient(to left, #000, transparent 2px),
+        repeating-linear-gradient(to top, #000, transparent 2px),
+        linear-gradient(to bottom, #007f0c, #004306);
+
+        --contour: #00CC14;
+        --hover: #00CC14;
+    
+        --mn-title-weight: 785;
+        --mn-sbtitle-weight: 465;
+    }
+}
+@media (prefers-color-scheme: light) {
+    :root.theme-light,
+    .theme-auto {    
+        --color: #000;
+        --bg-color: #fff;
+        --el-color: #fff;
+        --bg-image:  
+        repeating-linear-gradient(to left, #d3d3d3, transparent 2px),
+        repeating-linear-gradient(to top, #d3d3d3, transparent 2px),
+        linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+
+        --contour: #000;
+        --sparks: #f00;
+        --hover: #000;
+    }
+}
