@@ -29,14 +29,6 @@
         translate: 0% 0%;
     }
 }
-@keyframes move-reverse {
-    from {
-        translate: 0% 0%;
-    }
-    to {
-        translate: -100% 0%;
-    }
-}
 @keyframes color {
     0% {
         color: var(--color);
