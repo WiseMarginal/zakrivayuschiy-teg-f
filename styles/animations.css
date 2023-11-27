@@ -14,10 +14,10 @@
 */
 @keyframes pointed {
     0% {
-         margin-inline-start: -19px;
+         margin-inline-start: -5px;
     }
     100% {
-        margin-inline-start: -16px;
+        margin-inline-start: -9px;
     }
 }
 
@@ -37,14 +37,6 @@
         color: var(--bg-color);
     }
 }
-@keyframes border {
-    from {
-        border: none;
-    }
-    to {
-        border: solid 2px var(--color);
-    }
-}
 @keyframes heart {
     from {
         transform: scale(1);
@@ -61,3 +53,13 @@
         opacity: 1;
     }
 }
+
+.like-icon.is-liked .sparks {
+    animation: sparks 0.3s ease-in 0.08s none alternate;
+  }
+  
+  .like-icon.is-liked .heart {
+    animation: heart 0.3s ease-in 0.1s none alternate;
+  }
+
+  

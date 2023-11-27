@@ -4,16 +4,16 @@
     --text-fonts: "Inter Variable";
 
     --color: #000;
+    --bttn-color: #fff;
     --bg-color: #fff;
     --el-color: #fff;
 
     --contour: #000;
     --sparks: #f00;
     --bg-image:  
-    repeating-linear-gradient(to left, #d3d3d3, transparent 2px),
-    repeating-linear-gradient(to top, #d3d3d3, transparent 2px),
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7, #1a1a1a);
-    --hover: #000;
 
     --mn-title-weight: 700;
     --mn-sbtitle-weight: 400;

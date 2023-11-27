@@ -28,6 +28,9 @@ li {
 
 a {
   color: inherit;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
 
 button,

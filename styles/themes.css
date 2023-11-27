@@ -7,10 +7,11 @@
 .theme-dark {
     --color: #00CC14;
     --bg-color: #000;
+    --bttn-color: #00CC14;
     --el-color: #000;
     --bg-image:  
-    repeating-linear-gradient(to left, #000, transparent 2px),
-    repeating-linear-gradient(to top, #000, transparent 2px),
+    repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #007f0c, #004306);
 
     --contour: #00CC14;
@@ -23,9 +24,10 @@
     --color: #000;
     --bg-color: #fff;
     --el-color: #fff;
+    --bttn-color: #fff;
     --bg-image:  
-    repeating-linear-gradient(to left, #d3d3d3, transparent 2px),
-    repeating-linear-gradient(to top, #d3d3d3, transparent 2px),
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7, #1a1a1a);
 
     --contour: #000;
@@ -33,14 +35,32 @@
     --hover: #000;
 }
 @media (prefers-color-scheme: dark) {
-    :root.theme-dark,
-     .theme-auto {
+    :root.theme-dark {
         --color: #00CC14;
         --bg-color: #000;
         --el-color: #000;
+        --bttn-color: #00CC14;
+        --bg-image: 
+        repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
+        repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+        linear-gradient(to bottom, #007f0c, #004306);
+
+        --contour: #00CC14;
+        --hover: #00CC14;
+    
+        --mn-title-weight: 785;
+        --mn-sbtitle-weight: 465;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    :root.theme-auto {
+        --color: #00CC14;
+        --bg-color: #000;
+        --el-color: #000;
+        --bttn-color: #00CC14;
         --bg-image:  
-        repeating-linear-gradient(to left, #000, transparent 2px),
-        repeating-linear-gradient(to top, #000, transparent 2px),
+        repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
+        repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
         linear-gradient(to bottom, #007f0c, #004306);
 
         --contour: #00CC14;
@@ -51,14 +71,30 @@
     }
 }
 @media (prefers-color-scheme: light) {
-    :root.theme-light,
-    .theme-auto {    
+    :root.theme-light {    
         --color: #000;
         --bg-color: #fff;
         --el-color: #fff;
+        --button-color: #fff;
         --bg-image:  
-        repeating-linear-gradient(to left, #d3d3d3, transparent 2px),
-        repeating-linear-gradient(to top, #d3d3d3, transparent 2px),
+        repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+        repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+        linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+
+        --contour: #000;
+        --sparks: #f00;
+        --hover: #000;
+    }
+}
+@media (prefers-color-scheme: light) {
+    :root.theme-auto {
+        --color: #000;
+        --bg-color: #fff;
+        --el-color: #fff;
+        --button-color: #fff;
+        --bg-image:  
+        repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+        repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
         linear-gradient(to bottom, #e7e7e7, #1a1a1a);
 
         --contour: #000;
