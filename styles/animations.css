@@ -55,7 +55,7 @@
 }
 
 .like-icon.is-liked .sparks {
-    animation: sparks 0.3s ease-in 0.08s none alternate;
+    animation: sparks 0.3s ease-in 0.3s none alternate;
   }
   
   .like-icon.is-liked .heart {
