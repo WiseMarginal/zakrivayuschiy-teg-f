@@ -16,8 +16,8 @@
 
     --contour: #00CC14;
     --hover: #00CC14;
-
 }
+
 :root.theme-light {
     --color: #000;
     --bg-color: #fff;
@@ -32,6 +32,7 @@
     --sparks: #f00;
     --hover: #000;
 }
+
 @media (prefers-color-scheme: dark) {
     :root {
         --color: #00CC14;
@@ -48,7 +49,8 @@
     
         --mn-title-weight: 785;
         --mn-sbtitle-weight: 465;
-}
+    }
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -66,4 +68,5 @@
         --sparks: #f00;
         --hover: #000;
     }
+    
 }
