@@ -20,16 +20,6 @@
         margin-inline-start: -9px;
     }
 }
-
-@keyframes move {
-    from {
-        translate: -100% 0%;
-    }
-    to {
-        translate: 0% 0%;
-    }
-}
-
 @keyframes color {
     0% {
         color: var(--color);
@@ -63,6 +53,7 @@
   
   .like-icon.is-liked .heart {
     animation: heart 0.3s ease-in 0.1s none alternate;
+    transform-origin: center;
   }
 
   .core {
